@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Restaurante Delicioso</title>
+    
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/coming-sssoon.css' %}" rel="stylesheet" />
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="{% url 'login' %}"> 
+                <i class="fa-solid fa-user"></i>
+                Inicia Sesión
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'login' %}"> 
+                <i class="fa-solid fa-user-plus"></i>
+                Regístrate
+            </a>
+        </li>
+      </ul>  
+    </div>
+  </div>
+</nav>
+
+<div class="main" style="background-image: url('{% static 'img/restaurant.jpg' %}')">
+    <div class="cover black" data-color="black"></div>
+    <div class="container">
+        <h1 class="logo cursive">
+            Restaurante Delicioso
+        </h1>
+        
+        <div class="content">
+            <h4 class="motto">¡Descubre los sabores que te harán volver una y otra vez!</h4>
+            <div class="subscribe">
+                <h5 class="info-text">
+                    ¡Bienvenido a nuestro restaurante! Reserva tu pedido ya.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/jquery-1.10.2.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+</body>
+</html>
